@@ -1,36 +1,39 @@
-# Retail Sales Analysis | MySQL & Power BI
+# Retail Sales Analysis | SQL, Power BI & Python
 
 ## Project Overview
 
 This project analyses retail sales data to identify business trends, evaluate product and regional performance, understand customer purchasing behaviour, and generate actionable business insights.
 
-The analysis uses **MySQL** for data exploration and business analysis and **Microsoft Power BI** for interactive dashboards and visualisation.
+The project uses MySQL for SQL-based business analysis, Python for data analysis and forecasting, and Microsoft Power BI for interactive dashboards.
 
 ## Dataset Information
 
 - **Dataset:** Sales Forecasting – Superstore
 - **Source:** [Kaggle – Sales Forecasting Dataset](https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting)
-- **CSV file:** `superstore.csv`
+- **CSV File:** `superstore.csv`
 - **Records:** 9,800
 - **Columns:** 18
 - **Period:** 2015–2018
 
 ## Tools & Technologies
 
-- MySQL – Data storage, data quality checks and SQL analysis
-- Microsoft Excel – Initial data inspection and preparation
-- Microsoft Power BI – Interactive dashboards and visualisation
-- DAX – Measures and customer classification
+- **MySQL:** Data exploration, data quality checks and business analysis
+- **Python:** Pandas, NumPy, Matplotlib and Scikit-learn
+- **Microsoft Power BI:** Interactive dashboards and visualisation
+- **DAX:** Measures and customer classification
+- **Microsoft Excel:** Initial dataset inspection
 
 ## Project Workflow
 
-1. Dataset inspection and preparation using Excel.
+1. Dataset inspection and preparation.
 2. Database and table creation in MySQL.
 3. CSV data import and verification.
-4. Data exploration and quality checks.
-5. SQL-based business analysis.
-6. Power BI dashboard development using DAX.
-7. Business insights and recommendations.
+4. SQL-based business analysis.
+5. Python data quality checks and analysis.
+6. RFM customer segmentation.
+7. Basic sales forecasting using Linear Regression.
+8. Power BI dashboard development.
+9. Business insights and recommendations.
 
 ## Key Performance Indicators
 
@@ -43,52 +46,72 @@ The analysis uses **MySQL** for data exploration and business analysis and **Mic
 | Repeat Customers | 780 |
 | One-time Customers | 13 |
 
-## SQL Analysis
+## SQL Analysis – MySQL
 
-The project includes SQL queries covering:
+Performed business analysis using SQL queries, including:
 
-- Initial data exploration
-- Data quality checks
-- Category-wise and sub-category-wise sales
-- Region-wise sales
-- Customer segment analysis
-- Top 10 customers by sales
-- Top 10 products by sales
+- Data exploration and quality checks
+- Sales by category and sub-category
+- Regional and segment-wise sales
+- Top customers and products
 - Monthly and yearly sales trends
+- State and city performance
 - Shipping mode analysis
-- Average order-to-ship time
-- Top 10 states and cities by sales
-- Customer order frequency
-- Repeat versus one-time customer analysis
-- Most frequently recorded products
+- Customer purchase frequency and retention
 
-**SQL query file:** [queries.sql](queries.sql)
+**SQL File:** [View SQL Queries](queries.sql)
+
+## Python Analysis
+
+Used Python libraries to perform additional analysis and validate SQL results.
+
+**Libraries:** Pandas, NumPy, Matplotlib and Scikit-learn.
+
+### 1. Data Quality Checks
+- Checked missing values and duplicate records.
+- Identified 11 missing Postal Code values.
+- Found zero duplicate rows.
+- Validated total sales, orders and customers against SQL results.
+
+### 2. Monthly and Yearly Sales Analysis
+- Analysed monthly sales trends.
+- Compared yearly sales from 2015 to 2018.
+- Created visualisations using Matplotlib.
+
+### 3. RFM Customer Segmentation
+
+Performed Recency, Frequency and Monetary analysis for 793 customers.
+
+| Customer Segment | Customers |
+|---|---:|
+| High Value | 201 |
+| Regular | 298 |
+| At Risk | 178 |
+| Low Value | 116 |
+
+Used custom RFM scoring rules to classify customers.
+
+### 4. Basic Sales Forecasting
+
+Applied Linear Regression to historical yearly sales data.
+
+| Year | Forecasted Sales |
+|---|---:|
+| 2019 | $782,220.19 |
+| 2020 | $868,954.59 |
+
+**Note:** The forecast is illustrative and based on only four annual observations. It should not be treated as a reliable business prediction.
+
+**Python Notebook:** [Retail Sales Analysis Python](Retail_Sales_Analysis_Python.ipynb)
 
 ## Power BI Dashboards
 
-Four interactive dashboard pages were developed.
+Created four interactive dashboard pages:
 
-### 1. Sales Overview
-- Total Sales, Total Orders and Total Customers
-- Sales by Region
-- Sales by Segment
-- Sales by Category and Sub-category
-- Sales by Month
-
-### 2. Detailed Analysis
-- Top 10 Customers by Sales
-- Top 10 Products by Sales
-
-### 3. Customer and Geographic Analysis
-- Sales by Shipping Mode
-- Top 10 States by Sales
-- Top 10 Cities by Sales
-- Top 10 Customers by Order Frequency
-
-### 4. Customer Retention and Product Insights
-- Repeat versus One-time Customers
-- Top 10 Most Frequently Recorded Products
-- Segment and Category slicers
+1. Sales Overview
+2. Detailed Analysis
+3. Customer and Geographic Analysis
+4. Customer Retention and Product Insights
 
 ### Dashboard Screenshots
 
@@ -100,59 +123,42 @@ Four interactive dashboard pages were developed.
 
 ![Customer Retention and Product Insights](screenshots/Dashboard4.png)
 
-**Power BI file:** `PowerBI/Retail_Sales_Analysis.pbix`
+**Power BI File:** `SuperStore_Analysis.pbix`
 
 ## Key Business Insights
 
-1. **Category Performance:** Technology generated the highest sales of $827,455.87, contributing approximately 36.6% of total sales.
-
-2. **Regional Performance:** The West region generated the highest sales of $710,219.68, contributing approximately 31.4% of total sales.
-
-3. **Customer Segments:** The Consumer segment contributed $1,148,060.53, approximately 50.8% of total sales.
-
-4. **Product Performance:** Phones was the highest-revenue sub-category, generating $327,782.45.
-
-5. **Geographic Performance:** California generated the highest state-level sales of $446,306.46. New York City was the highest-performing city, with $252,462.55.
-
-6. **Customer Retention:** 780 out of 793 customers were repeat customers, representing approximately 98.36%.
-
-7. **Monthly Performance:** November 2018 recorded the highest monthly sales of $117,938.16.
-
-8. **Yearly Performance:** Sales increased by approximately 30.6% in 2017 and 20.3% in 2018 compared with the respective previous years.
+1. Technology generated $827,455.87, contributing 36.6% of total sales.
+2. The West region generated $710,219.68, contributing 31.4%.
+3. Consumer customers contributed $1,148,060.53, approximately 50.8% of sales.
+4. Phones was the highest-selling sub-category at $327,782.45.
+5. California was the leading state, with $446,306.46 in sales.
+6. New York City generated $252,462.55 in sales.
+7. November 2018 recorded the highest monthly sales at $117,938.16.
+8. Annual sales increased by 30.6% in 2017 and 20.3% in 2018.
 
 ## Business Recommendations
 
-- Maintain suitable inventory for high-performing categories and products.
-- Investigate opportunities to improve sales in lower-performing regions.
-- Strengthen customer retention through loyalty programmes and personalised offers.
-- Develop strategies to attract new customers.
-- Review order processing and shipping efficiency.
-- Use historical monthly sales patterns to support inventory and promotional planning.
+- Maintain sufficient inventory for high-performing categories and products.
+- Investigate regional sales differences.
+- Develop customer retention and loyalty strategies.
+- Engage at-risk customers through targeted campaigns.
+- Use historical sales trends to support inventory and sales planning.
 
 ## Data Limitations
 
-The dataset does not contain:
-
-- Quantity
-- Profit
-- Discount
-
-Therefore:
-- Sales analysis represents revenue, not profit.
-- Product frequency represents the number of sales records, not actual units sold.
-- Shipping time represents the interval between order date and ship date, not customer delivery time.
+- The dataset does not contain Quantity, Profit or Discount columns.
+- Sales figures should not be interpreted as profit.
+- Product record frequency does not represent actual units sold.
+- The forecasting model uses only four annual observations and has limited predictive reliability.
 
 ## Project Files
 
-- `queries.sql` – MySQL analysis queries
-- `PowerBI/` – Power BI dashboard file and documentation
-- `Business_Insights/` – Business insights report
-- `Final_Report/` – Combined project report
+- `queries.sql` – SQL business analysis
+- `Retail_Sales_Analysis_Python.ipynb` – Python analysis
+- `SuperStore_Analysis.pbix` – Power BI dashboard
 - `screenshots/` – Dashboard screenshots
-
-*Folder and file links should be updated to match the final repository structure.*
+- `Retail_Sales_Analysis_Final_Report.pdf` – Final project report
 
 ## Project Outcome
 
-Developed a retail sales analysis project using MySQL and Power BI to analyse 9,800 records, evaluate sales performance, understand customer behaviour, and communicate findings through four interactive dashboards.
-
+Developed an end-to-end retail sales analysis project using MySQL, Python and Power BI, covering 9,800 records and generating business insights through SQL analysis, customer segmentation, visualisation and basic forecasting.

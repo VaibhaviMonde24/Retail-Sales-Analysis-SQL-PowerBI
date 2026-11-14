@@ -108,7 +108,7 @@ Four dashboard pages:
 - `Business_Insights/` – Business insights documentation
 - `Final_Report/` – Project report
 - `screenshots/` – Dashboard screenshots
-
+- - [Retail Sales Analysis Excel Workbook](Retail_Sales_Analysis_Excel.xlsx)
 *Update folder and file links to match the final repository structure.*
 
 ## Project Outcome

@@ -1,128 +1,148 @@
-# Retail-Sales-Analysis-SQL-PowerBI
-Retail sales data analysis project using MySQL and Power BI.
-
-# Retail Sales Analysis using SQL and Power BI
+# Retail Sales Analysis | MySQL & Power BI
 
 ## Project Overview
-This project focuses on analysing retail sales data to understand business performance, customer behaviour, product performance, regional sales and shipping patterns.
 
-MySQL was used for data cleaning checks, data exploration and SQL-based business analysis. Microsoft Power BI was used to create interactive dashboards and visualise key business insights.
+This project analyses retail sales data to identify business trends, evaluate product and regional performance, understand customer purchasing behaviour, and generate actionable business insights.
 
-## Project Objectives
-- Analyse overall retail sales performance.
-- Identify top-performing product categories and sub-categories.
-- Understand regional and customer segment performance.
-- Analyse customer purchasing patterns.
-- Explore monthly and yearly sales trends.
-- Examine shipping mode performance.
-- Build interactive Power BI dashboards.
-
-## Tools and Technologies
-- **MySQL** – Data validation, SQL queries and business analysis.
-- **Microsoft Power BI** – Interactive dashboards and data visualisation.
-- **DAX** – Measures and customer classification.
-- **Microsoft Excel** – Initial dataset inspection.
-- **Kaggle** – Dataset source.
+The analysis uses **MySQL** for data exploration and business analysis and **Microsoft Power BI** for interactive dashboards and visualisation.
 
 ## Dataset Information
-- Dataset: Superstore / Sales Forecasting Dataset
-- Source: Kaggle
-- File: `superstore.csv`
-- Total Records: 9,800
-- Total Columns: 18
-- Date Range: January 2015 – December 2018
 
-### Key Metrics
+- **Dataset:** Sales Forecasting – Superstore
+- **Source:** [Kaggle – Sales Forecasting Dataset](https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting)
+- **CSV file:** `superstore.csv`
+- **Records:** 9,800
+- **Columns:** 18
+- **Period:** 2015–2018
+
+## Tools & Technologies
+
+- MySQL – Data storage, data quality checks and SQL analysis
+- Microsoft Excel – Initial data inspection and preparation
+- Microsoft Power BI – Interactive dashboards and visualisation
+- DAX – Measures and customer classification
+
+## Project Workflow
+
+1. Dataset inspection and preparation using Excel.
+2. Database and table creation in MySQL.
+3. CSV data import and verification.
+4. Data exploration and quality checks.
+5. SQL-based business analysis.
+6. Power BI dashboard development using DAX.
+7. Business insights and recommendations.
+
+## Key Performance Indicators
+
 | Metric | Result |
 |---|---:|
 | Total Sales | $2,261,536.78 |
-| Total Orders | 4,922 |
+| Total Records | 9,800 |
+| Unique Orders | 4,922 |
 | Unique Customers | 793 |
 | Repeat Customers | 780 |
 | One-time Customers | 13 |
 
 ## SQL Analysis
-The following analyses were performed using MySQL:
 
-1. Data quality checks
-2. Sales by category
-3. Sales by region
-4. Sales by customer segment
-5. Top 10 customers by sales
-6. Top 10 products by sales
-7. Monthly sales trends
-8. Year-wise sales analysis
-9. Shipping mode analysis
-10. Average order-to-ship time
-11. Top 10 states by sales
-12. Sales by sub-category
-13. City-wise sales analysis
-14. Customer order frequency
-15. Repeat vs one-time customer analysis
-16. Most frequently recorded products
+The project includes SQL queries covering:
+
+- Initial data exploration
+- Data quality checks
+- Category-wise and sub-category-wise sales
+- Region-wise sales
+- Customer segment analysis
+- Top 10 customers by sales
+- Top 10 products by sales
+- Monthly and yearly sales trends
+- Shipping mode analysis
+- Average order-to-ship time
+- Top 10 states and cities by sales
+- Customer order frequency
+- Repeat versus one-time customer analysis
+- Most frequently recorded products
+
+**SQL query file:** [queries.sql](queries.sql)
 
 ## Power BI Dashboards
 
-### Dashboard 1 – Sales Overview
-- Total Sales
-- Total Orders
-- Total Customers
+Four interactive dashboard pages were developed.
+
+### 1. Sales Overview
+- Total Sales, Total Orders and Total Customers
 - Sales by Region
 - Sales by Segment
-- Sales by Category
-- Sales by Sub-category
+- Sales by Category and Sub-category
 - Sales by Month
 
-### Dashboard 2 – Detailed Analysis
+### 2. Detailed Analysis
 - Top 10 Customers by Sales
 - Top 10 Products by Sales
 
-### Dashboard 3 – Customer and Geographic Analysis
-- Sales by Ship Mode
+### 3. Customer and Geographic Analysis
+- Sales by Shipping Mode
 - Top 10 States by Sales
 - Top 10 Cities by Sales
 - Top 10 Customers by Order Frequency
 
-### Dashboard 4 – Customer Retention and Product Insights
-- Repeat vs One-time Customers
+### 4. Customer Retention and Product Insights
+- Repeat versus One-time Customers
 - Top 10 Most Frequently Recorded Products
-- Segment Slicer
-- Category Slicer
+- Segment and Category slicers
+
+**Power BI file:** `PowerBI/Retail_Sales_Analysis.pbix`
 
 ## Key Business Insights
-- Technology generated the highest category sales of $827,455.87.
-- The West region recorded the highest sales of $710,219.68.
-- The Consumer segment generated the highest sales of $1,148,060.53.
-- Phones was the highest-selling sub-category by sales.
-- California was the highest-sales state.
-- New York City was the highest-sales city.
-- November 2018 recorded the highest monthly sales.
-- The dataset contained 780 repeat customers and 13 one-time customers.
-- Standard Class was the most frequently used shipping mode.
+
+1. **Category Performance:** Technology generated the highest sales of $827,455.87, contributing approximately 36.6% of total sales.
+
+2. **Regional Performance:** The West region generated the highest sales of $710,219.68, contributing approximately 31.4% of total sales.
+
+3. **Customer Segments:** The Consumer segment contributed $1,148,060.53, approximately 50.8% of total sales.
+
+4. **Product Performance:** Phones was the highest-revenue sub-category, generating $327,782.45.
+
+5. **Geographic Performance:** California generated the highest state-level sales of $446,306.46. New York City was the highest-performing city, with $252,462.55.
+
+6. **Customer Retention:** 780 out of 793 customers were repeat customers, representing approximately 98.36%.
+
+7. **Monthly Performance:** November 2018 recorded the highest monthly sales of $117,938.16.
+
+8. **Yearly Performance:** Sales increased by approximately 30.6% in 2017 and 20.3% in 2018 compared with the respective previous years.
 
 ## Business Recommendations
-- Maintain suitable inventory for high-performing products.
-- Explore opportunities to improve sales in lower-performing regions.
-- Focus on customer retention and converting one-time customers into repeat customers.
-- Plan inventory and promotions around stronger sales periods.
-- Review shipping processes to identify opportunities to reduce order-to-ship time.
 
-## Project Limitations
-- The dataset did not contain Quantity, Profit or Discount columns.
-- Product record frequency does not represent units sold.
-- Order-to-ship time does not represent complete delivery time.
-- Findings are based on the provided dataset.
+- Maintain suitable inventory for high-performing categories and products.
+- Investigate opportunities to improve sales in lower-performing regions.
+- Strengthen customer retention through loyalty programmes and personalised offers.
+- Develop strategies to attract new customers.
+- Review order processing and shipping efficiency.
+- Use historical monthly sales patterns to support inventory and promotional planning.
 
-## Project Deliverables
-- MySQL SQL analysis queries
-- SQL documentation
-- Power BI report (`.pbix`)
-- Power BI documentation
-- Dashboard screenshots
-- Final combined project report
+## Data Limitations
 
-## Conclusion
-This project demonstrates how MySQL and Power BI can be used together to analyse retail data, identify business trends and create interactive dashboards. It helped develop practical skills in SQL querying, data validation, DAX, data visualisation and business analysis.
+The dataset does not contain:
 
----
-**Created by: Vaibhavi Monde**
+- Quantity
+- Profit
+- Discount
+
+Therefore:
+- Sales analysis represents revenue, not profit.
+- Product frequency represents the number of sales records, not actual units sold.
+- Shipping time represents the interval between order date and ship date, not customer delivery time.
+
+## Project Files
+
+- `queries.sql` – MySQL analysis queries
+- `PowerBI/` – Power BI dashboard file and documentation
+- `Business_Insights/` – Business insights report
+- `Final_Report/` – Combined project report
+- `screenshots/` – Dashboard screenshots
+
+*Folder and file links should be updated to match the final repository structure.*
+
+## Project Outcome
+
+Developed a retail sales analysis project using MySQL and Power BI to analyse 9,800 records, evaluate sales performance, understand customer behaviour, and communicate findings through four interactive dashboards.
+

@@ -90,6 +90,16 @@ Four interactive dashboard pages were developed.
 - Top 10 Most Frequently Recorded Products
 - Segment and Category slicers
 
+### Dashboard Screenshots
+
+![Sales Overview](screenshots/Dashboard1.png)
+
+![Detailed Analysis](screenshots/Dashboard2.png)
+
+![Customer and Geographic Analysis](screenshots/Dashboard3.png)
+
+![Customer Retention and Product Insights](screenshots/Dashboard4.png)
+
 **Power BI file:** `PowerBI/Retail_Sales_Analysis.pbix`
 
 ## Key Business Insights

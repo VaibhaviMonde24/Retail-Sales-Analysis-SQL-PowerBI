@@ -1,11 +1,13 @@
 # Retail Sales Analysis | Excel, MySQL, Python & Power BI
 
 ## Project Overview
+
 This project analyses retail sales data to identify business trends, evaluate product and regional performance, understand customer purchasing behaviour, and generate actionable business insights.
 
 The project uses **Microsoft Excel, MySQL, Python and Power BI** for data preparation, analysis, forecasting and interactive visualisation.
 
 ## Dataset Information
+
 - **Dataset:** Sales Forecasting – Superstore
 - **Source:** [Kaggle – Sales Forecasting Dataset](https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting)
 - **CSV file:** `superstore.csv`
@@ -14,6 +16,7 @@ The project uses **Microsoft Excel, MySQL, Python and Power BI** for data prepar
 - **Period:** 2015–2018
 
 ## Tools & Technologies
+
 - **Microsoft Excel:** Data inspection, PivotTables, formulas and dashboard creation
 - **MySQL:** Data storage, data quality checks and SQL analysis
 - **Python:** Data analysis, RFM analysis, customer segmentation and sales forecasting
@@ -22,6 +25,7 @@ The project uses **Microsoft Excel, MySQL, Python and Power BI** for data prepar
 - **DAX:** Measures and customer classification
 
 ## Project Workflow
+
 1. Dataset inspection and preparation.
 2. Excel data analysis using PivotTables and formulas.
 3. Database and table creation in MySQL.
@@ -36,11 +40,13 @@ The project uses **Microsoft Excel, MySQL, Python and Power BI** for data prepar
 Created an Excel workbook containing:
 
 - Cleaned dataset sheet.
-- PivotTables for Category-wise, Region-wise and Segment-wise sales.
+- PivotTables for category-wise, region-wise and segment-wise sales.
 - Excel formulas and KPI calculations.
 - Dashboard with four key metrics: Total Sales, Total Orders, Total Customers and Total Records.
-- Charts for Category-wise, Region-wise, Segment-wise and monthly sales comparison.
+- Charts for category-wise, region-wise, segment-wise and monthly sales comparison.
 - Interactive slicers for Region, Category and Segment.
+
+**Excel workbook:** [Retail_Sales_Analysis_Excel.xlsx](Retail_Sales_Analysis_Excel.xlsx)
 
 ## Key Performance Indicators
 
@@ -54,7 +60,9 @@ Created an Excel workbook containing:
 | One-time Customers | 13 |
 
 ## SQL Analysis
+
 SQL queries cover:
+
 - Data exploration and quality checks.
 - Category, sub-category and regional performance.
 - Customer and product analysis.
@@ -66,7 +74,9 @@ SQL queries cover:
 **SQL query file:** [queries.sql](queries.sql)
 
 ## Python Analysis
+
 Python analysis performed in Google Colab includes:
+
 - Missing-value and duplicate checks.
 - Date-based sales analysis.
 - Monthly and yearly sales trends.
@@ -74,18 +84,28 @@ Python analysis performed in Google Colab includes:
 - Customer segmentation.
 - Sales forecasting for 2019 and 2020.
 
-Forecasted sales:
-- 2019: $782,220.19
-- 2020: $868,954.59
+**Forecasted sales:**
+
+| Year | Forecasted Sales |
+|---|---:|
+| 2019 | $782,220.19 |
+| 2020 | $868,954.59 |
+
+**Python notebook:** [Retail_Sales_Analysis_Python.ipynb](Retail_Sales_Analysis_Python.ipynb)
 
 ## Power BI Dashboards
+
 Four dashboard pages:
+
 1. Sales Overview
 2. Detailed Analysis
 3. Customer and Geographic Analysis
 4. Customer Retention and Product Insights
 
+**Power BI file:** [SuperStore_Analysis.pbix](SuperStore_Analysis.pbix)
+
 ## Key Business Insights
+
 1. Technology generated $827,455.87, representing 36.6% of total sales.
 2. West region contributed $710,219.68, representing 31.4%.
 3. Consumer segment generated $1,148,060.53, representing 50.8%.
@@ -96,20 +116,25 @@ Four dashboard pages:
 8. Annual sales increased by approximately 20.3% in 2018.
 
 ## Data Limitations
+
 - The dataset does not contain Quantity, Profit or Discount columns.
 - Sales figures should not be interpreted as profit.
 - Product record frequency does not represent units sold.
 - Shipping analysis measures order-to-ship time, not delivery time.
 
 ## Project Files
-- `queries.sql` – SQL analysis queries
-- `Retail_Sales_Analysis_Excel.xlsx` – Excel workbook
-- `PowerBI/` – Power BI dashboard
-- `Business_Insights/` – Business insights documentation
-- `Final_Report/` – Project report
-- `screenshots/` – Dashboard screenshots
-- - [Retail Sales Analysis Excel Workbook](Retail_Sales_Analysis_Excel.xlsx)
-*Update folder and file links to match the final repository structure.*
+
+| File / Folder | Description |
+|---|---|
+| `queries.sql` | SQL analysis queries |
+| `Retail_Sales_Analysis_Excel.xlsx` | Excel workbook and dashboard |
+| `Retail_Sales_Analysis_Python.ipynb` | Python analysis notebook |
+| `SuperStore_Analysis.pbix` | Power BI dashboard |
+| `Documentation/` | Project documentation |
+| `screenshots/` | Dashboard screenshots |
+
+**Documentation includes:** Excel, SQL, Python and Power BI documentation, along with the final project report.
 
 ## Project Outcome
-Developed an end-to-end retail sales analysis project using Excel, MySQL, Python and Power BI to explore 9,800 sales records, analyse customer behaviour, forecast sales and present business insights through interactive dashboards.
+
+Developed an end-to-end retail sales analysis project using Excel, MySQL, Python and Power BI to explore 9,800 sales records, analyse customer behaviour, perform RFM segmentation, forecast sales and present business insights through interactive dashboards.

@@ -52,9 +52,12 @@ Created an Excel workbook containing:
 
 ![Excel Dashboard – Overview](screenshots/Excel_Analysis%20(1).png)
 
+
 ![Excel Analysis – PivotTables](screenshots/Excel_Analysis%20(2).png)
 
+
 ![Excel Analysis – Formulas](screenshots/Excel_Analysis%20(3).png)
+
 
 ![Excel Analysis – Dashboard](screenshots/Excel_Analysis%20(4).png)
 
@@ -118,9 +121,12 @@ Four dashboard pages:
 
 ![Sales Overview](screenshots/Dashboard1.png)
 
+
 ![Detailed Analysis](screenshots/Dashboard2.png)
 
+
 ![Customer and Geographic Analysis](screenshots/Dashboard3.png)
+
 
 ![Customer Retention and Product Insights](screenshots/Dashboard4.png)
 
